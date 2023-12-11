@@ -1,0 +1,33 @@
+.load__container {
+    background-color: #fff;
+    width: 823px;
+    min-width: 430px;
+    height: 367px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 2px 4px 9.899999618530273px 0px #00000040;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 99px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.load__text {
+    font-family: 'Noto Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+.load__center__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

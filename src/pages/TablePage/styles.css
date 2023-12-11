@@ -1,0 +1,5 @@
+.table__load {
+    padding: 18px;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Тестовое задание по фронтенд разработке М.Тех
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Проект сделан с помощью [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Запуск проекта
 
-In the project directory, you can run:
+Для запуска проекта, необходимо клонировать проект и установить зависимости с помощью команды `npm install` 
 
+После этого проект можно запустить с помощью:
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Запускает приложение в режиме разработки.\
+Проект будет доступен в браузере по адресу [http://localhost:3000](http://localhost:3000).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Задание:
 
-### `npm run build`
+### Создать инструмент просмотра csv-файла с данными
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+SPA (Single Page Application) с двумя экранамй:
+1. Главный экран (загрузка) ✅
+2. Просмотр данных (таблица) ✅
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Главный экран
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+На главном экране – блок по центру, с текстом «Выберите файл в формате CSV» и
+кнопкой «Выберите файл». ✅
 
-### `npm run eject`
+При нажатий на кнопку «Выберите файл», открывается окно выбора файла ОС. ✅
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+При выборе файла в формате .CSV, необходимо выбрать данные оттуда, перевести
+пользователя на следующий экран. ✅
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Если выбран не .CSV файл, то вывести ошйбку «Неправильный формат файла,
+разрешены только файлы .CSV» ✅ (блок ошибки пропадает через 5 секунд, либо после загрузки файла в формате CSV)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Экран просмотра данных
 
-## Learn More
+На экране просмотра отображается кнопка «Загрузить новый файл» и таблица с данными. ✅
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Вставить данные в таблицу из загруженного на первом экране файла, сопоставив поля из примера ✅
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Данные необходимо сохранить в браузере (LocalStorage/IndexedDB), чтобы при
+обновлении страницы они оставались на месте. Если эти данные сохранены, то
+необходимо открывать сразу экран с таблицей , пропуская экран загрузки. ✅
+
+При нажатии на кнопку «Загрузить новый файл», необходимо очищать сохраненные в
+браузере данные и переводить пользователя на главный экран. ✅

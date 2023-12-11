@@ -1,0 +1,26 @@
+.load__label {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #6346B4;
+    color: #fff;
+    width: 274px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.load__label:hover {
+    background-color: #A88EF0;
+}
+
+.load__label:active {
+    background-color: #311F63;
+}
+.load__input {
+    display: none;
+}
